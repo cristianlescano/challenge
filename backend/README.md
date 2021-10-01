@@ -38,8 +38,10 @@ Esta es la parte frobackendntend hecha en Node con typescript para el challenge 
     export DB_NAME="mecanicos"
 
 ## Script
+
+### Para instalar correr `npm install`
 #
-En la carpeta del directorio podes correr este comando, para evitar errores es necesario tener la parte del backend levantada:
+En la carpeta del directorio podes correr este comando, para evitar errores es necesario tener la parte de la base de datos levantada:
 
 ### `npm run dev`
 
