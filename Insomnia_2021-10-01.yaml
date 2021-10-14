@@ -1,0 +1,430 @@
+_type: export
+__export_format: 4
+__export_date: 2021-10-01T12:12:33.993Z
+__export_source: insomnia.desktop.app:v2021.5.3
+resources:
+  - _id: req_511602975e1f4de6a0957242c8aaf92e
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1632787386024
+    created: 1632787381291
+    url: http://localhost:8000/autos
+    name: Listado
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632787381291
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_79e2584cfa124f06a893d446247a929e
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632777852262
+    created: 1632777852262
+    name: Autos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1632777852262
+    _type: request_group
+  - _id: wrk_98389ecbbc2749fb89b6d422ef05d932
+    parentId: null
+    modified: 1632777843230
+    created: 1632777843230
+    name: Mecanicos
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_27c7f633ceb44b0489a01d8afab3be3c
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1632836613732
+    created: 1632777856789
+    url: http://localhost:8000/autos
+    name: Alta
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idPropietario": 2,
+        	"marca": "Chevrolet",
+        	"modelo": "Tracker",
+        	"anio": 2021,
+        	"patente": "AD-123-CC",
+        	"color": "Gris"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7409aa112d6e45579761aab66440822c
+    authentication: {}
+    metaSortKey: -1632786190728.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_640a63e64aae4fd1be7bdc5f7999c9d4
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1632836611297
+    created: 1632836521871
+    url: http://localhost:8000/autos/1
+    name: Edit
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idPropietario": 2,
+        	"marca": "Chevro---.let",
+        	"modelo": "Tracker",
+        	"anio": 2021,
+        	"patente": "AD-123-CC",
+        	"color": "Gris"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3e17333394d741199c558c5efed5882a
+    authentication: {}
+    metaSortKey: -1632785000165.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9aa81ed6526c47849116107ce6b86ef4
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1632836632575
+    created: 1632836604845
+    url: http://localhost:8000/autos/1
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632782619040
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e72e45fae25346e98d45b7e226dfb484
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1633066486378
+    created: 1633066467254
+    url: http://localhost:8000/autos/2/transacciones
+    name: Get transacciones
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632782618990
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5a61fffc88a4459d8241a1ec159cc9b8
+    parentId: fld_79e2584cfa124f06a893d446247a929e
+    modified: 1633066528354
+    created: 1633066497308
+    url: http://localhost:8000/autos/2/transacciones
+    name: Alta transacciones
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "[1,2,3,4]"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_653fe6673ae14a2286c6b5749c4beccd
+    authentication: {}
+    metaSortKey: -1632782618940
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f73acd0be2f04fdfac3d11146b965b37
+    parentId: fld_0bffe4c5a6e44fccb45b44ca63a6943f
+    modified: 1632839217589
+    created: 1632839209971
+    url: http://localhost:8000/propietarios
+    name: Listado
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632787381291
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0bffe4c5a6e44fccb45b44ca63a6943f
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632839209961
+    created: 1632839209961
+    name: Propietarios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1630871512824
+    _type: request_group
+  - _id: req_bcde21e8a7b748be9a087f841fadace2
+    parentId: fld_0bffe4c5a6e44fccb45b44ca63a6943f
+    modified: 1632839262478
+    created: 1632839209965
+    url: http://localhost:8000/propietarios
+    name: Alta
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre": "Chevrolet",
+        	"apellido": "Tracker"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7409aa112d6e45579761aab66440822c
+    authentication: {}
+    metaSortKey: -1632786190728.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f845b76200424a78b07bb7bd71291e1a
+    parentId: fld_0bffe4c5a6e44fccb45b44ca63a6943f
+    modified: 1632839273743
+    created: 1632839209974
+    url: http://localhost:8000/propietarios/1
+    name: Edit
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre": "Chevrolet",
+        	"apellido": "Trackerasdasd"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3e17333394d741199c558c5efed5882a
+    authentication: {}
+    metaSortKey: -1632785000165.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_612ce56df097403293fd3af12fda3436
+    parentId: fld_0bffe4c5a6e44fccb45b44ca63a6943f
+    modified: 1632839235651
+    created: 1632839209978
+    url: http://localhost:8000/propietarios/1
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632782619040
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1bc5d4ee9b954aefade8e0f9fa1156fd
+    parentId: fld_a2a3996cee2d49409966bc2c6ee1d3eb
+    modified: 1632838838343
+    created: 1632838830472
+    url: http://localhost:8000/servicios
+    name: Listado
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632787381291
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a2a3996cee2d49409966bc2c6ee1d3eb
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632838830434
+    created: 1632838830434
+    name: Servicios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1628965173386
+    _type: request_group
+  - _id: req_969d7a7e84c54d25a9caac8b0e01335b
+    parentId: fld_a2a3996cee2d49409966bc2c6ee1d3eb
+    modified: 1632838892126
+    created: 1632838830451
+    url: http://localhost:8000/servicios
+    name: Alta
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre": "test",
+        	"costo": 10.5
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7409aa112d6e45579761aab66440822c
+    authentication: {}
+    metaSortKey: -1632786190728.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7a40913700d14bf79172a71ee82d70c0
+    parentId: fld_a2a3996cee2d49409966bc2c6ee1d3eb
+    modified: 1632838924245
+    created: 1632838830475
+    url: http://localhost:8000/servicios/1
+    name: Edit
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre": "teeest",
+        	"costo": 20.3
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3e17333394d741199c558c5efed5882a
+    authentication: {}
+    metaSortKey: -1632785000165.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3a1339838d7e40aba074bd5cfd1bc03b
+    parentId: fld_a2a3996cee2d49409966bc2c6ee1d3eb
+    modified: 1632838857248
+    created: 1632838830477
+    url: http://localhost:8000/servicios/1
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1632782619040
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_abc2e14f77ecd661f09a5a1a4e99445b4eab6329
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632777843259
+    created: 1632777843259
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1632777843259
+    _type: environment
+  - _id: jar_abc2e14f77ecd661f09a5a1a4e99445b4eab6329
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632777843264
+    created: 1632777843264
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_c8ec455ac5b04bcd89c56a8c6b98727d
+    parentId: wrk_98389ecbbc2749fb89b6d422ef05d932
+    modified: 1632777843238
+    created: 1632777843238
+    fileName: Mecanicos
+    contents: ""
+    contentType: yaml
+    _type: api_spec
